@@ -1,5 +1,5 @@
 import React from 'react'
-import EmployeeList from './components/EmployeeList'
+import EmployeeList from './components/employee-management/EmployeeList'
 
 function App() {
     return (
