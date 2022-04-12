@@ -2,7 +2,9 @@ import React from 'react'
 
 function EmployeeHeader() {
   return (
-    <div>Employee Management</div>
+    <div>
+        <h1>Employee Management</h1>
+    </div>
   )
 }
 
