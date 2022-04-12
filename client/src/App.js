@@ -1,31 +1,10 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import EmployeeList from './components/EmployeeList'
 
 function App() {
-  const [backendData, setBackendData] = useState([{}]);
-
-  useEffect(() => {
-    fetch('/api').then(
-      response => response.json()
-    ).then(
-      data => {
-        setBackendData(data)
-      }
+    return (
+      <EmployeeList />
     )
-  }, []);
-
-  return (
-    <div>
-      {
-        (typeof backendData.employees === 'undefined') ? (
-          <p>Fetching...</p>
-        ) : (
-          backendData.employees.map((employee, key) => (
-            <p key={key}>{employee}</p>
-          ))
-        )
-      }
-    </div>
-  )
 }
 
 export default App
