@@ -15,15 +15,29 @@ function EmployeeList() {
 
     return (
         <div>
-          {
-            (typeof backendData.employees === 'undefined') ? (
-              <p>Fetching...</p>
-            ) : (
-              backendData.employees.map((employee, key) => (
-                <p key={key}>{employee}</p>
-              ))
-            )
-          }
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Position</th>
+                    <th>Hourly Rate</th>
+                </tr>
+            
+                {
+                    (typeof backendData.employees === 'undefined') ? (
+                        <p>Fetching...</p>
+                    ) : (
+                        backendData.employees.map((employee, key) => (
+                            <tr>
+                                <td>{employee['firstName']}</td>
+                                <td>{employee['lastName']}</td>
+                                <td>{employee['position']}</td>
+                                <td>{employee['hourlyRate']}</td>
+                            </tr>
+                        ))
+                    )
+                }
+            </table>
         </div>
     )
 }
