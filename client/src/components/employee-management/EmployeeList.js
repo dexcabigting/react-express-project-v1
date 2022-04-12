@@ -20,6 +20,8 @@ function EmployeeList() {
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Position</th>
+                    <th>Sick Leave Credits</th>
+                    <th>Vacation Leave Credits</th>
                     <th>Hourly Rate</th>
                 </tr>
             
@@ -32,6 +34,8 @@ function EmployeeList() {
                                 <td>{employee['firstName']}</td>
                                 <td>{employee['lastName']}</td>
                                 <td>{employee['position']}</td>
+                                <td>{employee['sickLeaveCredits']}</td>
+                                <td>{employee['vacationLeaveCredits']}</td>
                                 <td>{employee['hourlyRate']}</td>
                             </tr>
                         ))
