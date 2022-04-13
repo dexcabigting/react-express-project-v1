@@ -1,16 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 
 function EmployeeList() {
     const [backendData, setBackendData] = useState([{}]);
 
     useEffect(() => {
-        fetch('/api').then(
-            response => response.json()
-        ).then(
-            data => {
-            setBackendData(data)
-            }
-        )
+        fetch('/api')
+            .then(response => response.json())
+            .then(data => { setBackendData(data) })
     }, []);
 
     return (
@@ -24,7 +20,7 @@ function EmployeeList() {
                     <th>Vacation Leave Credits</th>
                     <th>Hourly Rate</th>
                 </tr>
-            
+
                 {
                     (typeof backendData.employees === 'undefined') ? (
                         <p>Fetching...</p>

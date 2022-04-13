@@ -10,7 +10,7 @@ app.get('/api', (req, res) => {
                     'lastName': 'Batumbakal',
                     'position': 'Mafia Boss',
                     'sickLeaveCredits': 4,
-                    'vacationLeaveCredits': 2,                     
+                    'vacationLeaveCredits': 2,
                     'hourlyRate': 210
                 },
                 {
@@ -18,7 +18,7 @@ app.get('/api', (req, res) => {
                     'lastName': 'Luthor',
                     'position': 'CEO',
                     'sickLeaveCredits': 3,
-                    'vacationLeaveCredits': 4,                     
+                    'vacationLeaveCredits': 4,
                     'hourlyRate': 220
                 },
                 {
@@ -26,7 +26,7 @@ app.get('/api', (req, res) => {
                     'lastName': 'Macquiao',
                     'position': 'Bakser',
                     'sickLeaveCredits': 2,
-                    'vacationLeaveCredits': 7,                    
+                    'vacationLeaveCredits': 7,
                     'hourlyRate': 230
                 }
             ]
