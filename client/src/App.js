@@ -1,13 +1,18 @@
 import React from 'react'
-import EmployeeHeader from './components/employee-management/EmployeeHeader'
-import EmployeeList from './components/employee-management/EmployeeList'
+import Home from './pages/home'
+import Employees from './pages/employees'
+import PayrollSystem from './pages/payroll-system'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
     return (
-      <div>
-          <EmployeeHeader />
-          <EmployeeList />
-      </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/employees" element={<Employees />} />
+                <Route path="/payroll-system" element={<PayrollSystem />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
